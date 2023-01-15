@@ -1,0 +1,123 @@
+@import "../../../styles/variables.scss";
+
+.closeContainer {
+  display: none;
+}
+.container {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  transition: opacity 0.1s ease-in-out;
+  animation: open 0.15s 0.15s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+}
+
+@keyframes open {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    top: 0;
+    right: 0;
+  }
+  50% {
+    width: 5rem;
+    height: 0;
+    opacity: 0.5;
+    top: -7.5px;
+    right: -5px;
+  }
+  100% {
+    width: auto;
+    background-color: $white;
+    opacity: 1;
+    box-shadow: 0 10px 53px 0 rgb(163 204 170 / 30%);
+    padding: 3rem 2rem 3rem 2rem;
+    right: -10px;
+    top: -15px;
+  }
+}
+
+.linkContainer {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.link {
+  color: $blueText;
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+  position: relative;
+  margin-bottom: 1rem;
+  opacity: 0;
+  &:hover {
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $blueText;
+      position: absolute;
+      left: -15px;
+      top: 3px;
+      right: 0;
+      z-index: 100;
+      border-radius: 50%;
+    }
+  }
+}
+.link1 {
+  transition: all 0.4s linear;
+  animation: linkAnmi 0.3s 0.3s linear forwards;
+}
+.link2 {
+  transition: all 0.45s linear;
+  animation: linkAnmi 0.35s 0.35s linear forwards;
+}
+.link3 {
+  transition: all 0.5s linear;
+  animation: linkAnmi 0.4s 0.4s linear forwards;
+}
+@keyframes linkAnmi {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(14px);
+  }
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .container {
+    animation: open 0.15s 0.15s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+  }
+
+  @keyframes open {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      top: 0;
+      right: 0;
+    }
+    50% {
+      width: 5rem;
+      height: 0;
+      opacity: 0.5;
+      top: -7.5px;
+      right: -5px;
+    }
+    100% {
+      width: 90vw;
+      background-color: $white;
+      opacity: 1;
+      box-shadow: 0 10px 53px 0 rgb(163 204 170 / 30%);
+      padding: 3rem 2rem 3rem 2rem;
+      right: -3.4vw;
+      top: -1px;
+    }
+  }
+}

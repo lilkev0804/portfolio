@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.leftSideContainer,
+.rightSideContainer {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.leftSideContainer {
+  justify-content: flex-start;
+}
+
+.rightSideContainer {
+  justify-content: flex-end;
+}
+.textContainer {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.titleContainer {
+  color: $blueText;
+  font-size: 3rem;
+  line-height: 63px;
+  margin: 0 0 0.8rem 0;
+}
+.sentence {
+  margin: 0;
+  padding: 0;
+  color: $paragraphWhiteColor;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .rightSideContainer,
+  .leftSideContainer {
+    justify-content: center;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: $smallScreen) {
+  .mainContainer {
+    height: unset;
+  }
+  .titleContainer {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,115 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.leftContainer {
+  position: relative;
+}
+.circleLogo {
+  background-color: $green;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    color: $blue;
+    font-weight: 800;
+  }
+}
+.logo {
+  color: $green;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.buttonContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px grey;
+}
+.buttonMenu {
+  z-index: 999;
+  position: relative;
+  background-color: transparent;
+  height: 15px;
+
+  border: transparent;
+  transition: all 0.8s ease-in;
+
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    background-color: $blue;
+    height: 2px;
+    right: -7px;
+    top: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    background-color: $blue;
+    height: 2px;
+    right: -7px;
+    top: 10px;
+  }
+}
+
+.openMenu {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    background-color: $blue;
+    height: 2px;
+    right: -7px;
+    top: 5px;
+    transform: rotate(50deg);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    background-color: $blue;
+    height: 2px;
+    right: -7px;
+    top: 5px;
+    transform: rotate(-50deg);
+  }
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .container {
+    padding-top: 1rem;
+  }
+}

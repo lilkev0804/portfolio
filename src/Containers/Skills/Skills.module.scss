@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  background-color: $grey;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.titleSection {
+  color: $blueText;
+  font-size: 2.5rem;
+}
+.skillsContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(193, 193, 193);
+  position: relative;
+  padding: 1rem 0;
+}
+.separator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: $blue;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.leftSideContainer,
+.rightSideContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+.titleSubSection {
+  color: $blueText;
+  letter-spacing: 1.4px;
+  padding-bottom: 1rem;
+}
+.languageList,
+.tootList {
+  columns: 2;
+  width: 100%;
+}
+.listElement {
+  color: $green;
+}
+.liValue {
+  color: $black !important;
+}

@@ -1,0 +1,9 @@
+@import "../styles/variables.scss";
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

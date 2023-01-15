@@ -1,0 +1,133 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  background-color: $blueText;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.titleContainer {
+  color: $green;
+  font-size: 3rem;
+}
+.experiencesContainer {
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.listUl {
+  padding: 0;
+}
+.customLi {
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  position: relative;
+  color: $white;
+  &:hover {
+    &::after {
+      content: "";
+      background-color: $white;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 3px;
+      left: -17px;
+      border-radius: 10px;
+    }
+  }
+}
+.activeLi {
+  color: $green;
+  &::after {
+    content: "";
+    background-color: $green;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: -17px;
+    border-radius: 10px;
+  }
+}
+.experiences {
+  width: 30%;
+}
+.experienceText {
+  width: 70%;
+  min-height: 325px;
+  color: $white;
+}
+.link {
+  padding: 0 1rem;
+  color: $green;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+.customUl {
+  column-count: 2;
+}
+.liExperience {
+  list-style: square;
+  color: $green;
+}
+.date {
+  font-style: italic;
+}
+.stackName {
+  color: $white;
+}
+.breakLine,
+.breakLineSmall,
+.breakLineLarge {
+  height: 1px;
+  border-bottom: 1px solid $green;
+}
+.breakLine {
+  padding-top: 1rem;
+  width: 11.5rem;
+}
+.breakLineSmall {
+  width: 5rem;
+}
+.breakLineLarge {
+  width: 2.5rem;
+}
+.experiencesMobile {
+  display: none;
+}
+@media screen and (max-width: $mediumScreen) {
+  .mainContainer {
+    padding: 2rem 0;
+  }
+  .experiencesContainer {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  .experiences {
+    display: none;
+  }
+  .experienceText {
+    display: none;
+  }
+  .experiencesMobile {
+    display: flex;
+    flex-direction: column;
+    .experienceText {
+      display: block;
+      width: 100%;
+      min-height: unset;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
