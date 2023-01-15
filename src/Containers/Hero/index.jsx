@@ -12,7 +12,7 @@ export default function Hero() {
           </h1>
           <p className={styles.catchSentence}>
             J&apos;aime concevoir des applications front-end solides et
-            evolutifs tout en offrant la meilleure expérience utilisateur
+            evolutifs tout en offrant la meilleure expérience utilisateur.
           </p>
         </div>
         <div></div>

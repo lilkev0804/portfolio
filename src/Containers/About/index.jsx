@@ -8,13 +8,13 @@ export default function About() {
           <div className={styles.textContainer}>
             <h2 className={styles.titleContainer}>Qui suis-je ?</h2>
             <p className={styles.sentence}>
-              Hello , je m&apos;appel Kévin Lemarié je suis un développeur
-              front-end depuis 2 ans suite à une reconversion proféssionnelle.
-              Mon choix c&apos;est porté sur le developpement web car depuis
-              tout petit j&apos;ai un appétence pour l&apos;informatique que ce
-              soit hardware ou software, mais également le fait d&apos;aprrendre
-              sans cesse de nouvelle chose me motive chaque jour de plus en
-              plus.
+              Hello , je m&apos;appel Kévin Lemarié, vivant à Rouen ( 76 ) je
+              suis un développeur front-end depuis 2 ans suite à une
+              reconversion proféssionnelle. Mon choix c&apos;est porté sur le
+              developpement web car depuis tout petit j&apos;ai un appétence
+              pour l&apos;informatique que ce soit hardware ou software, mais
+              également le fait d&apos;aprrendre sans cesse de nouvelle chose me
+              motive chaque jour de plus en plus.
             </p>
           </div>
         </div>

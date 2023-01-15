@@ -2,6 +2,7 @@ import About from "@/Containers/About";
 import Contact from "@/Containers/Contact";
 import Experiences from "@/Containers/Experiences";
 import Hero from "@/Containers/Hero";
+import Skills from "@/Containers/Skills";
 import Head from "next/head";
 import React from "react";
 import NavBar from "../Components/navbar/index";
@@ -21,7 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experiences />
-        {/* <Skills /> */}
+        <Skills />
         <Contact />
       </main>
     </>

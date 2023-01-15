@@ -24,7 +24,7 @@ const jobs = [
       "REST",
     ],
     description:
-      "Now Online est une startup qui permet à des professionnel de proposer des consultation à distance à ses clients. Il s'agit d'une marketplace qui permet au client de trouver le professionnel. J'ai travailler  à la conception de solution front pour la marketplace ainsi que la plateforme de consultation vidéo.",
+      "Now Online est une startup qui permet à des professionnel de proposer des consultations à distance à ses clients. Il s'agit d'une marketplace qui référence un grand nombre de profésionnel , ce rendant disponible ses clients. J'ai travailler  à la conception de solution front pour la marketplace ainsi que la plateforme de consultation vidéo.",
   },
   {
     id: 1,
@@ -73,7 +73,7 @@ const jobs = [
     ],
     contract: "FREE-LANCE",
     description:
-      "ET360 digital est une startup dans le domaine du sport plus particulierement sur le coaching à travers sont application mobile iOS/ Android. Mon travail fut de creer l'application mobile ainsi que leur site afin de vendre des produits complémentaires.",
+      "ET360 digital est une startup dans le domaine du sport plus particulierement sur le coaching à travers sont application mobile iOS/ Android. Mon travail fut de créer l'application mobile ainsi que leur site afin de vendre des produits complémentaires.",
   },
   {
     id: 3,
