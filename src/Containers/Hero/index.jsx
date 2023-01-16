@@ -15,7 +15,7 @@ export default function Hero() {
             evolutifs tout en offrant la meilleure expérience utilisateur.
           </p>
         </div>
-        <div></div>
+        <div className={styles.mainSkills}></div>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.avatarContainer}>
