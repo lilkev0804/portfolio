@@ -27,6 +27,23 @@ export default function Home() {
             name="description"
             content="Kévin Lemarié , développeur frond-end javascript ( react js , next js , node js , react native)"
           ></meta>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-7EKL12VYBT"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7EKL12VYBT', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -37,6 +54,19 @@ export default function Home() {
         })(window,document,'script','dataLayer','GTM-NM9HGWZ');
       `}
         </Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7EKL12VYBT"
+        ></Script>
+        {`
+     
+      
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-7EKL12VYBT');
+       `}
 
         <main className={styles.mainContainer}>
           <>Loading</>
