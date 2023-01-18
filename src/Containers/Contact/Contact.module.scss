@@ -52,3 +52,15 @@
   border: none;
   background-color: transparent;
 }
+.messageCopy {
+  animation: disapear 1s 3s linear forwards;
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

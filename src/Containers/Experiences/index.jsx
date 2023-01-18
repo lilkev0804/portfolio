@@ -7,7 +7,7 @@ const jobs = [
   {
     id: 0,
     name: "Now Online",
-    date: "14 fevrier 2022 - 31 fevrier 2023",
+    date: "14 fevrier 2022 - 28 fevrier 2023",
     contract: "CDI",
     url: "https://www.now.online",
     title: "Développeur front-end",

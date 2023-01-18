@@ -60,10 +60,8 @@
   position: relative;
   background-color: transparent;
   height: 15px;
-
   border: transparent;
-  transition: all 0.8s ease-in;
-
+  transition: all 0.8s 0.4s linear;
   cursor: pointer;
   &::after {
     content: "";

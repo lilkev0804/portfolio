@@ -20,16 +20,18 @@ const social = [
 ];
 
 export default function Contact() {
-  const [messageCopy, setMessageCopy] = useState("");
+  const [messageCopy, setMessageCopy] = useState(null);
   const handlePaste = useCallback(() => {
-    setMessageCopy("E-mail copié dans le presse papier");
+    setMessageCopy(null);
     let fullLink = document.createElement("input");
     document.body.appendChild(fullLink);
     fullLink.value = "lemarie.kevin@gmail.com";
     fullLink.select();
     document.execCommand("copy");
     fullLink.remove();
+    setMessageCopy("E-mail copié dans le presse papier");
   }, []);
+
   return (
     <section id="contactMe" className={styles.mainContainer}>
       <div className={styles.container}>
@@ -58,6 +60,7 @@ export default function Contact() {
             </Link>
           ))}
         </div>
+        {messageCopy && <p className={styles.messageCopy}>{messageCopy}</p>}
       </div>
     </section>
   );

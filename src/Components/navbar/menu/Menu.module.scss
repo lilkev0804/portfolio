@@ -7,8 +7,8 @@
   display: flex;
   position: absolute;
   z-index: 100;
-  transition: opacity 0.1s ease-in-out;
-  animation: open 0.15s 0.15s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+  transition: all 0.3s linear;
+  animation: open 0.3s 0.3s linear forwards;
 }
 
 @keyframes open {
@@ -18,13 +18,15 @@
     opacity: 0;
     top: 0;
     right: 0;
+    border-bottom-left-radius: 50%;
   }
   50% {
-    width: 5rem;
-    height: 0;
+    width: 1rem;
+    height: 1rem;
     opacity: 0.5;
     top: -7.5px;
     right: -5px;
+    border-bottom-left-radius: 20%;
   }
   100% {
     width: auto;
@@ -34,6 +36,7 @@
     padding: 3rem 2rem 3rem 2rem;
     right: -10px;
     top: -15px;
+    border-bottom-left-radius: 0%;
   }
 }
 
@@ -67,16 +70,16 @@
   }
 }
 .link1 {
-  transition: all 0.4s linear;
-  animation: linkAnmi 0.3s 0.3s linear forwards;
+  transition: all 0.45s linear;
+  animation: linkAnmi 0.45s 0.45s linear forwards;
 }
 .link2 {
-  transition: all 0.45s linear;
-  animation: linkAnmi 0.35s 0.35s linear forwards;
+  transition: all 0.5s linear;
+  animation: linkAnmi 0.5s 0.5s linear forwards;
 }
 .link3 {
-  transition: all 0.5s linear;
-  animation: linkAnmi 0.4s 0.4s linear forwards;
+  transition: all 0.55s linear;
+  animation: linkAnmi 0.55s 0.55s linear forwards;
 }
 @keyframes linkAnmi {
   0% {

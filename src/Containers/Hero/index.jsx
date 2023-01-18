@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hero.module.scss";
 import Avatar from "../../assets/images/photo-avatar.png";
 import Image from "next/image";
+
 export default function Hero() {
   return (
     <div id="hero" className={styles.container}>
@@ -22,6 +23,7 @@ export default function Hero() {
           <Image
             className={styles.avatar}
             src={Avatar}
+            objectFit="contain"
             width={300}
             height={300}
             alt="Kévin Lemarié Développeur front end  React js Next js"
