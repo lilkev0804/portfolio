@@ -4,7 +4,7 @@ import Avatar from "../../assets/images/photo-avatar.png";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div className={styles.container}>
+    <div id="hero" className={styles.container}>
       <div className={styles.leftContainer}>
         <div className={styles.mainContainer}>
           <h1 className={styles.title}>

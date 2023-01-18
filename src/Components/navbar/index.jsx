@@ -15,28 +15,32 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const Logo = useCallback(() => {
-    if (hasScroll) {
-      return (
+  // const Logo = useCallback(() => {
+  //   if (hasScroll) {
+  //     return (
+  //       <div className={styles.leftContainer}>
+  //         <div className={styles.circleLogo}>
+  //           <p className={styles.logo}>KL</p>
+  //         </div>
+  //       </div>
+  //     );
+  //   }
+
+  //   return (
+  //     <div className={styles.leftContainer}>
+  //       <p className={styles.logo}>Kévin Lemarié</p>
+  //     </div>
+  //   );
+  // }, [hasScroll]);
+
+  return (
+    <nav className={styles.mainContainer}>
+      <div className={styles.container}>
         <div className={styles.leftContainer}>
           <div className={styles.circleLogo}>
             <p className={styles.logo}>KL</p>
           </div>
         </div>
-      );
-    }
-
-    return (
-      <div className={styles.leftContainer}>
-        <p className={styles.logo}>Kévin Lemarié</p>
-      </div>
-    );
-  }, [hasScroll]);
-
-  return (
-    <nav className={styles.mainContainer}>
-      <div className={styles.container}>
-        <Logo />
         <div className={styles.leftContainer}>
           <div
             onClick={() => setOpenMenu(!openMenu)}
