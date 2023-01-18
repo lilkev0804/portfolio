@@ -29,7 +29,7 @@ export default function Home() {
           ></meta>
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-7EKL12VYBT"
+            src={`https://www.googletagmanager.com/gtag/js?id=G-7EKL12VYBT`}
           />
 
           <script
