@@ -7,9 +7,9 @@ const jobs = [
   {
     id: 0,
     name: "Now Online",
-    date: "14 fevrier 2021 - 28 fevrier 2023",
+    date: "14 fevrier 2021 - 24 fevrier 2023",
     contract: "CDI",
-    url: "https://www.now.online",
+    url: "https://www.voox.online",
     title: "Développeur front-end",
     stack: [
       "React Js",
