@@ -6,6 +6,24 @@ import styles from "./Experiences.module.scss";
 const jobs = [
   {
     id: 0,
+    name: "Le Parisien",
+    date: "18 avril 2023 - AUjourd'hui",
+    contract: "CDI",
+    url: "https://www.leparisien.fr",
+    title: "Développeur fullstack",
+    stack: [
+      "React Js",
+      "AWS",
+      "GrahpQL",
+      "Axios",
+      "React Testing Library",
+      "Jenkins",
+      "REST",
+    ],
+    description: "NC",
+  },
+  {
+    id: 1,
     name: "Now Online",
     date: "14 fevrier 2021 - 24 fevrier 2023",
     contract: "CDI",
@@ -27,7 +45,7 @@ const jobs = [
       "Now Online est une startup qui permet à des professionnel de proposer des consultations à distance à ses clients. Il s'agit d'une marketplace qui référence un grand nombre de profésionnel , ce rendant disponible ses clients. J'ai travailler  à la conception de solution front pour la marketplace ainsi que la plateforme de consultation vidéo.",
   },
   {
-    id: 1,
+    id: 2,
     name: "Titan Déménagement",
     date: "Mars 2022 - Decembre 2022",
     contract: "FREE-LANCE",
@@ -53,7 +71,7 @@ const jobs = [
       "Titan Déménagement une startup dans le secteur du déménagement depuis 2021 . Je leur ai créer l'ensemble de leur web app, de la creation de formulaire de contact, module de creation de devis de déménagement, des différents espaces utilisateurs ainsi que le backend et la mise en ligne.",
   },
   {
-    id: 2,
+    id: 3,
     url: "https://www.et360digital.com",
     name: "ET360 Digital",
     title: "Développeur FullStack",
@@ -73,10 +91,10 @@ const jobs = [
     ],
     contract: "FREE-LANCE",
     description:
-      "ET360 digital est une startup dans le domaine du sport plus particulierement sur le coaching à travers sont application mobile iOS/ Android. Mon travail fut de créer l'application mobile ainsi que leur site afin de vendre des produits complémentaires.",
+      "ET360 digital est une sstartup dans le domaine du sport plus particulierement sur le coaching à travers sont application mobile iOS/ Android. Mon travail fut de créer l'application mobile ainsi que leur site afin de vendre des produits complémentaires.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Développeur FullStack",
     name: "La Belle Épingle",
     url: "https://www.labelleepingle.com",
