@@ -7,7 +7,7 @@ const jobs = [
   {
     id: 0,
     name: "Le Parisien",
-    date: "18 avril 2023 - AUjourd'hui",
+    date: "18 avril 2023 - Aujourd'hui",
     contract: "CDI",
     url: "https://www.leparisien.fr",
     title: "Développeur fullstack",
