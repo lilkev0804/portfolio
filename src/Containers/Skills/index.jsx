@@ -16,8 +16,8 @@ const lanquages = [
 
 const tool = [
   "Bash",
-  "Git & GitHub",
-  "Appolo",
+  "Git",
+  "Storybook",
   "MongoDB",
   "Postman",
   "Figma",
